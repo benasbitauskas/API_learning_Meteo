@@ -2,9 +2,9 @@ import requests
 from pprint import pprint
 
 
-base_url = 'https://api.meteo.lt/v1/stations/vilniaus-ams/observations/latest'
+base_url = 'https://api.meteo.lt/v1/stations/'
 
 
-weather_data = requests.get(base_url).json()
+stations = requests.get(base_url).json()
 
-pprint(weather_data)
+pprint(stations)
